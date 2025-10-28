@@ -8,9 +8,17 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Bruno Gajger">
     <title>Skriptni jezici</title>
+    <!-- internal css -->
+    <style>
+        .drugi{
+            color: rgb(226, 43, 43);
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
+
 
     <hr>
 
@@ -20,6 +28,15 @@
     </ol>
 
     <hr>
+
+
+    <h2>Dodavabhe CSSa</h2>
+    <ul>
+        <li style="color: blue;">inline</li>
+        <li class="drugi">internal</li>
+        <li class="treci">external</li>
+    </ul>
+
 
     <!-- heading elementi -->
     <h1>Naslov 1, alt + klik</h1>
@@ -32,7 +49,7 @@
     <!-- paragraf elementi -->
     <!-- break element <br> -->
     <!-- hr element <hr> -->
-    <p>Lorem ipsum dolor sit amet consectetur <br>
+    <p draggable="true">Lorem ipsum dolor sit amet consectetur <br>
         <hr> adipisicing elit. Dolor repellendus voluptatum, rem magnam nam
         eveniet quis quia in eos accusamus consequuntur adipisci quidem voluptas vero illum fuga eius distinctio
         ratione.
@@ -71,7 +88,7 @@
     <!-- liste, ul - unordered liste, ol - oredered liste, dl - difinition liste -->
 
     <h2>Voćni desert u čaši</h2>
-    <h3>Sastojci</h3>
+    <h3 id="naslov">Sastojci</h3>
 
     <ul type="square">
         <li>230 g kreme za kremšnite</li>
