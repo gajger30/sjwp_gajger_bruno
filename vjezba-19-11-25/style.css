@@ -1,0 +1,35 @@
+
+.redak1{
+    background-color: lightblue;
+}
+.redak2{
+    background-color: lightgray;
+}
+
+.redak4{
+    background-color: lightgray;
+}
+
+.redak6{
+    background-color: lightgray;
+}
+
+.Nature{
+    border: 1px solid gray;
+    margin-right: 1850px;
+    margin-left: 10px;
+    border-radius: 30px;
+    color: gray;
+}
+
+.Lake{
+    border: 1px solid gray;
+    margin-right: 1850px;
+    margin-left: 10px;
+    border-radius: 30px;
+    color: gray;
+}
+
+.Opis{
+    color: gray;
+}

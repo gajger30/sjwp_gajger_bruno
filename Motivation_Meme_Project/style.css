@@ -1,0 +1,23 @@
+body{
+  background-color: black;
+}
+
+h1{
+    color: white;
+    background-color: black;
+    font-family: "Libre Baskerville";
+    text-align: center;
+    align-items: center;
+}
+
+p{
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.slika{
+    border: 5px solid white;
+    margin-left: 580px;
+    margin-top: 50px;
+}
