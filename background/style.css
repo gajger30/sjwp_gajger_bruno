@@ -1,0 +1,67 @@
+html, body{
+    background-image: linear-gradient(to bottom, #F5EBFA, #E7DBED, #A56ABD, #6E3482, #49225B );
+    height: 100%;
+}
+
+.prvi{
+
+    height: 130px;
+    width: 350px;
+    background-color: #49225B;
+    position: relative;
+    top: 200px;
+    left: 770px;
+    border-radius: 100px;
+     box-shadow: 0px -10px 67px -15px rgba(0,0,0,0.57);
+
+}
+
+.drugi{
+
+    height: 130px;
+    width: 350px;
+    background-color: #6E3482;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    border-radius: 100px;
+     box-shadow: 0px -10px 67px -15px rgba(0,0,0,0.57);
+
+}
+
+.treci{
+    height: 130px;
+    width: 350px;
+    background-color: #A56ABD;
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    border-radius: 100px;
+     box-shadow: 0px -10px 67px -15px rgba(0,0,0,0.57);
+}
+
+.cetvrti{
+
+    height: 130px;
+    width: 350px;
+    background-color: #E7DBED;
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    border-radius: 100px;
+     box-shadow: 0px -10px 67px -15px rgba(0,0,0,0.57);
+
+}
+
+.peti{
+
+    height: 130px;
+    width: 350px;
+    background-color: #F5EBFA;
+    position: absolute;
+    top: 270px;
+    left: 0px;
+    border-radius: 100px;
+    box-shadow: 0px -10px 67px -15px rgba(0,0,0,0.57);
+
+}
