@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition2</title>
+
+    <style>
+
+        .zad1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out;
+        }
+        .zad1:hover{
+            width: 350px;
+        }
+        .zad2{
+            background-color: transparent;
+        }
+        .red{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-delay: 0s;
+            transition-timing-function: ease;
+        }
+        .red:hover{
+            width: 350px;
+        }
+        .blue{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-delay: 0s;
+            transition-timing-function: ease;
+        }
+        .blue:hover{
+            width: 350px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <h3>Zadatak 1</h3>
+    <div class="zad1"></div>
+    <h3>Zadatak 2</h3>
+    <div class="zad2">
+        <div class="red"></div>
+        <div class="blue"></div>
+    </div>
+    
+</body>
+</html>
