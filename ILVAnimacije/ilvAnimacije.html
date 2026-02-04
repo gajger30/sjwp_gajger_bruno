@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILV Animacije</title>
+
+<style>
+
+
+.zad1
+{
+    
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 100%;
+    animation-duration: 1.5s;
+    animation-name: zadatak1;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+
+@keyframes zadatak1
+{
+    0%
+    {
+        opacity: 100%;
+    }
+    50%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+    
+    .zad2
+    {
+        color: black;
+        font-size: large;
+        font-weight: bolder;
+        margin-top: 50px;
+        margin-left: -50px;
+        animation-duration: 2s;
+        animation-name: zadatak2;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+
+    @keyframes zadatak2 {
+        0%
+        {
+            margin-left: -50px;
+        }
+    
+        100%
+        {
+           margin-left: 250px;
+        }
+    }
+
+
+    .zad3
+    {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        margin-left: 100px;
+        border-radius: 0%;
+        animation-duration: 3s;
+        animation-name: zadatak3;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+    @keyframes zadatak3 {
+        100%
+        {
+            border-radius: 50%;
+        }
+    }
+
+    .zad4
+    {
+        background-color: violet;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        margin-left: 100px;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        
+    }
+
+    .zad4:hover
+    {
+        transform: rotate(90deg);
+    }
+
+    .zad51
+    {
+        height: 50px;
+        width: 80px;
+        background-color: turquoise;
+        margin-top: 70px;
+    }
+    .zad52
+    {
+        height: 70px;
+        width: 80px;
+        background-color: turquoise;
+        margin-left: 100px;
+    }
+    .zad53
+    {
+        height: 90px;
+        width: 80px;
+        background-color: turquoise;
+        margin-left: 100px;
+    }
+    .zad54
+    {
+        height: 110px;
+        width: 80px;
+        background-color: turquoise;
+        margin-left: 100px;
+    }
+    .zad55
+    {
+        height: 130px;
+        width: 80px;
+        background-color: turquoise;
+        margin-left: 100px;
+    }
+
+
+</style>
+
+</head>
+<body>
+
+    <!-- zadatak 1 -->
+     <!-- Zadatak 1: Treptajuća lampica
+            Napravi kružnu lampicu koja se naizmjenično pali i gasi.
+            - Koristi promjenu opacity
+            - Trajanje animacije: 1.5 sekundi
+            - Animacija se ponavlja beskonačno -->
+    <h3>-- Zadatak 1 --</h3>
+    <div class="zad1"></div>
+    <br><br><br><br><br>
+
+    <h3>-- Zadatak 2 --</h3>
+    <!-- Napravi div s tekstom koji na početku nije vidljiv na ekranu.
+            - Element dolazi s lijeve strane
+            - Koristi transform: translateX()
+            - Trajanje animacije: 2 sekunde -->
+        <div class="zad2">
+            <p>Tekst</p>
+        </div>
+        <br><br><br><br><br>
+
+        <!-- Napravi element koji započinje kao kvadrat, a tijekom animacije postaje krug.
+            - Koristi border-radius
+            - Trajanje animacije: 3 sekunde
+            - Animacija se ponavlja beskonačno -->
+
+            <h3>-- Zadatak 3 --</h3>
+
+            <div class="zad3"></div>
+                <br><br><br><br><br>
+
+
+    <h3>-- Zadatak 4 --</h3>
+    <!-- Napravi kvadratni element koji miruje dok se ne prijeđe mišem.
+            - Na hover se zakrene za 90 stupnjeva
+            - Koristi transform: rotate()
+            - Koristi transition trajanja 0.4 sekunde -->
+
+
+        <div class="zad4"></div>
+  <br><br><br><br><br>
+
+
+  <h3>-- Zadatak 5 --</h3>
+
+  <!-- Napravi indikator jačine signala sastavljen od pet vertikalnih stupaca.
+            - Stupci se pale redom s lijeva na desno
+            - Visina stupaca se povećava i smanjuje
+            - Koristi @keyframes i animation-delay
+            - Animacija je neprekidna -->
+
+        <div class="zad51">
+            <div class="zad52">
+                    <div class="zad53">
+                        <div class="zad54">
+                            <div class="zad55"></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        
+        
+        
+
+
+</body>
+</html>
