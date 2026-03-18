@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija Filmova</title>
+
+  <style>
+    body{
+        /* background-color: #192a56; */
+        background-color: #0c2c55;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        background-color: #e1d9bc;
+        padding: 10px;
+        gap: 10px;
+        margin-bottom: 20px;
+
+ 
+    }    
+    .navbar a {
+        text-decoration: none;
+        background-color: #456882;
+        color: #333;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .navbar a:hover {
+        background-color: #e0c89a;
+        transform: scale(0.95);
+    }
+
+  .navbar a:active {
+       /*  transform: scale(0.95); */ /* klik efekt */
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(5, 500px);
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .film{
+
+        width: 300px;
+        height: 500px;
+        background-color: #acbac4;
+    }
+
+  </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Filmovi</a>
+        <a href="#">Kontakt</a>
+</div>
+    <div class="container">
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+        <div class="film"></div>
+    </div>
+
+
+</body>
+</html>
