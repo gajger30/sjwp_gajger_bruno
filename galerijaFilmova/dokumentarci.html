@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentaries Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #020617;
+      color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #03132b;
+      padding: 10px;
+      gap: 10px;
+      margin-bottom: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar a {
+      text-decoration: none;
+      background: #1b2b53;
+      border-bottom: 1px solid #1E293B;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      transition: 0.3s;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar a:hover {
+      background-color: #7C3AED;
+      color: #E2E8F0;
+      transform: scale(0.95);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .label{
+      color: white;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 150px;
+    }
+
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 26px;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 16px 24px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card {
+      background-color: #0F172A;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      background-color: #1E293B;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6),
+                0 0 25px rgba(139, 92, 246, 0.4);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card-title {
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #E2E8F0;
+      text-align: center;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="./filmovi.html">Movies</a>
+    <a href="./serije.html">TV Shows</a>
+    <a href="./dokumentarci.html">Documentaries</a>
+  </div>
+
+  <p class="label">Documentaries</p>
+
+  <div class="container">
+    <a class="card-link" href="https://www.imdb.com/title/tt0310793/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://preview.redd.it/bowling-for-columbine-2002-v0-hufvm1z8qvnc1.jpeg?auto=webp&s=aa2fa1a62cdd9247e0989221ca62d67c0f269da8" alt="Bowling for Columbine"><div class="card-title">Bowling for Columbine</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0361596/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMjAyODU1NzM0NF5BMl5BanBnXkFtZTcwNjI1MjYyMQ@@._V1_.jpg" alt="Fahrenheit 9/11"><div class="card-title">Fahrenheit 9/11</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt11464826/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BNGQyY2E1M2EtZTkzNy00YjYyLWFjMGQtNTI1OGE4Yjc4MTZiXkEyXkFqcGc@._V1_.jpg" alt="The Social Dilemma"><div class="card-title">The Social Dilemma</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1645089/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMTQ3MjkyODA2Nl5BMl5BanBnXkFtZTcwNzQxMTU4Mw@@._V1_.jpg" alt="Inside Job"><div class="card-title">Inside Job</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1424432/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMTc5MTUzOTAxMl5BMl5BanBnXkFtZTcwODQzMjg3NA@@._V1_.jpg" alt="Senna"><div class="card-title">Senna</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1155592/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMTMxNTk3NDY1NV5BMl5BanBnXkFtZTcwNDk0ODg3MQ@@._V1_.jpg" alt="Man on Wire"><div class="card-title">Man on Wire</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt2125608/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMjA5Nzc2NDUyN15BMl5BanBnXkFtZTcwNjQwMjc5Nw@@._V1_FMjpg_UX1000_.jpg" alt="Searching for Sugar Man"><div class="card-title">Searching for Sugar Man</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1313104/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMTc3Nzg2NzM5MF5BMl5BanBnXkFtZTcwMTYwMjU2Mg@@._V1_FMjpg_UX1000_.jpg" alt="The Cove"><div class="card-title">The Cove</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt2545118/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/b/bd/BLACKFISH_Film_Poster.jpg" alt="Blackfish"><div class="card-title">Blackfish</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1587707/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMjE2NTg1NDM4Ml5BMl5BanBnXkFtZTcwMzMxOTkyMw@@._V1_.jpg" alt="Exit Through the Gift Shop"><div class="card-title">Exit Through the Gift Shop</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1152758/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/f/f5/DearZacharyTheatricalPoster.jpg" alt="Dear Zachary: A Letter to a Son About His Father"><div class="card-title">Dear Zachary: A Letter to a Son About His Father</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt2375605/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BZDg1NDMwMGQtMmFkZS00NTQwLTkxYjktMTlhNjI2NzNlYTQ1XkEyXkFqcGc@._V1_.jpg" alt="The Act of Killing"><div class="card-title">The Act of Killing</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0427312/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BODc3NTAxMTY1MV5BMl5BanBnXkFtZTcwOTE4NjUzMw@@._V1_FMjpg_UX1000_.jpg" alt="Grizzly Man"><div class="card-title">Grizzly Man</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1286537/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BNmQyY2VlNTYtYjYzNi00YmY3LTgzNTktOWJkZmNlMmFlNWQyXkEyXkFqcGc@._V1_.jpg" alt="Food, Inc."><div class="card-title">Food, Inc.</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0390521/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMTYyOTk4MjIxOF5BMl5BanBnXkFtZTcwMzk1NTUyMQ@@._V1_.jpg" alt="Super Size Me"><div class="card-title">Super Size Me</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0096257/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMDZmNzUwOTYtNzM5Ni00YjZhLTlmODAtNTJiZmM1NjlmMTdkXkEyXkFqcGc@._V1_.jpg" alt="The Thin Blue Line"><div class="card-title">The Thin Blue Line</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0110057/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Hoop_dreamsposter.jpg" alt="Hoop Dreams"><div class="card-title">Hoop Dreams</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0118147/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR37O8qxLsPCQbtR2snlguQozv20OUHT0bOSA&s" alt="When We Were Kings"><div class="card-title">When We Were Kings</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt5275892/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BZGY0NWIxNTEtYzVhOS00ZWY1LTkyNTctODBkMDBlMjI0YTI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="O.J.: Made in America"><div class="card-title">O.J.: Made in America</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt24082438/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BZmY2ODlmNmQtODQ2MS00OTlkLWIyNTEtNzhhNTEyNjNjMjdjXkEyXkFqcGc@._V1_.jpg" alt="20 Days in Mariupol"><div class="card-title">20 Days in Mariupol</div></div></a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Show Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #020617;
+      color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #03132b;
+      padding: 10px;
+      gap: 10px;
+      margin-bottom: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar a {
+      text-decoration: none;
+      background: #1b2b53;
+      border-bottom: 1px solid #1E293B;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      transition: 0.3s;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar a:hover {
+      background-color: #7C3AED;
+      color: #E2E8F0;
+      transform: scale(0.95);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .label{
+      color: white;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 150px;
+    }
+
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 26px;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 16px 24px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card {
+      background-color: #0F172A;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      background-color: #1E293B;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6),
+                0 0 25px rgba(139, 92, 246, 0.4);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card-title {
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #E2E8F0;
+      text-align: center;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="./filmovi.html">Movies</a>
+    <a href="./serije.html">TV Shows</a>
+    <a href="./dokumentarci.html">Documentaries</a>
+  </div>
+
+  <p class="label">TV Shows</p>
+
+  <div class="container">
+    <a class="card-link" href="https://www.imdb.com/title/tt0944947/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg" alt="Game of Thrones"><div class="card-title">Game of Thrones</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0903747/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg" alt="Breaking Bad"><div class="card-title">Breaking Bad</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="Stranger Things"><div class="card-title">Stranger Things</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt7366338/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg" alt="Chernobyl"><div class="card-title">Chernobyl</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0386676/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg" alt="The Office"><div class="card-title">The Office</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0108778/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/f496cm9enuEsZkSPzCwnTESEK5s.jpg" alt="Friends"><div class="card-title">Friends</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0460649/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg" alt="How I Met Your Mother"><div class="card-title">How I Met Your Mother</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt0141842/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg" alt="The Sopranos"><div class="card-title">The Sopranos</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt2306299/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg" alt="Vikings"><div class="card-title">Vikings</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt2442560/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg" alt="Peaky Blinders"><div class="card-title">Peaky Blinders</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt3032476/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BNDdjNTEzMjMtYjM3Mi00NzQ3LWFlNWMtZjdmYWU3ZDkzMjk1XkEyXkFqcGc@._V1_.jpg" alt="Better Call Saul"><div class="card-title">Better Call Saul</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1475582/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg" alt="Sherlock"><div class="card-title">Sherlock</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt8772296/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg" alt="Euphoria"><div class="card-title">Euphoria</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1190634/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg" alt="The Boys"><div class="card-title">The Boys</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt11198330/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg" alt="House of the Dragon"><div class="card-title">House of the Dragon</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt5180504/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/zrPpUlehQaBf8YX2NrVrKK8IEpf.jpg" alt="The Witcher"><div class="card-title">The Witcher</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt2861424/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://image.tmdb.org/t/p/w500/8kOWDBK6XlPUzckuHDo3wwVRFwt.jpg" alt="Rick and Morty"><div class="card-title">Rick and Morty</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt2085059/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BODcxMWI2NDMtYTc3NC00OTZjLWFmNmUtM2NmY2I1ODkxYzczXkEyXkFqcGc@._V1_.jpg" alt="Black Mirror"><div class="card-title">Black Mirror</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1196946/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMTQ5OTgzOTczM15BMl5BanBnXkFtZTcwMDM2OTY4MQ@@._V1_QL75_UY281_CR11,0,190,281_.jpg" alt="The Mentalist"><div class="card-title">The Mentalist</div></div></a>
+    <a class="card-link" href="https://www.imdb.com/title/tt1839578/" target="_blank" rel="noopener noreferrer"><div class="card"><img src="https://m.media-amazon.com/images/M/MV5BOTcxNDJiMTUtN2ZhZS00OGE1LWJmZmYtN2VhYThiZTBhYWM1XkEyXkFqcGc@._V1_.jpg" alt="Person of Interest"><div class="card-title">Person of Interest</div></div></a>
+  </div>
+</body>
+</html>
