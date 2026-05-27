@@ -7,17 +7,224 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Bruno Gajger">
-    <title>Skriptni jezici</title>
+    <title>Moja Osobna Web Stranica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- internal css -->
     <style>
-        .drugi{
+      /*   .drugi{
             color: rgb(226, 43, 43);
-        }
+        } */
     </style>
-    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
 </head>
 
+
+
+
+
+
+
+
 <body>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="./dslr-camera-icon-with-a-lens-isolated-on-a-white-background-vector.jpg" alt="logo" height="30px"
+                style="margin-right: 10px;"> Bruno Gajger</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hobiji</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fotografije</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../zadace/zadace.html">Zadaće</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Moja Osobna Web Stranica</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Moje ime je Bruno Gajger. Idem u Tehničku školu Slavonski Brod, smjer tehničar za
+                računalstvo. U slobodno vrijeme bavim se programiranjem i fotografijom te obrađujem fotografije.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"> <button type="button"
+                    class="btn btn-primary btn-lg px-4 me-sm-3" class="btnn-primary">Detaljnije o meni</button> <button
+                    type="button" class="btn btn-outline-secondary btn-lg px-4">Fotografije</button> </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5"> <img src="./141437-cameras-review-canon-eos-200d-image1-gibo5vmizw.avif"
+                    class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="400" height="500"
+                    loading="lazy"> </div>
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Čime se bavim</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                </div>
+                <img src="./istockphoto-1373100223-612x612.jpg" alt="" width="300px" class="rounded-4">
+                <h3 class="fs-2 text-body-emphasis">Programiranje</h3>
+                <p>U slobono vrijeme s kolgeom radim na jednom projektu.</p> <a href="#" class="icon-link">
+                    Primjer
+                    <svg class="bi" aria-hidden="true">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg> </a>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                </div>
+                <img src="./IMG_2310.JPG" alt="" height="300px" class="rounded-4">
+                <h3 class="fs-2 text-body-emphasis">Fotografija</h3>
+                <p>Fotografiram prirodu, grad i portrete.</p> <a href="#" class="icon-link">
+                    Kolekcija
+                    <svg class="bi" aria-hidden="true">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg> </a>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                </div>
+                <img src="./IMG_2280.jpg" alt="" height="300px" class="rounded-4">
+                <h3 class="fs-2 text-body-emphasis">Obrada fotografija</h3>
+                <p>Svoje fotografije obrađujem u Affinity Photo programu te ih objavljujem na svoj instagram profil.</p>
+                <a href="#" class="icon-link">
+                    Instagram
+                    <svg class="bi" aria-hidden="true">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg> </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- kontakt -->
+    <div class="container mt-5">
+        <p class="h2">Kontaktirajte Nas</p>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Ime</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Prezime</label>
+                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a email.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustomUsername" class="form-label">Poruka</label>
+                <div class="input-group has-validation">
+                    <textarea class="form-control" id="poruka" rows="6" required>
+        </textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Pošalji Poruku</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">Home</font>
+                        </font>
+                    </a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">Hobiji</font>
+                        </font>
+                    </a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">Fotografije</font>
+                        </font>
+                    </a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">About</font>
+                        </font>
+                    </a></li>
+            </ul>
+            <p class="text-center text-body-secondary">
+                <font dir="auto" style="vertical-align: inherit;">
+                    <font dir="auto" style="vertical-align: inherit;">© 2025 Bruno Gajger</font>
+                </font>
+            </p>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
 
 
     <hr>
@@ -39,7 +246,7 @@
     </ul>
 
 
-    <!-- heading elementi -->
+    <-- heading elementi 
     <h1>Naslov 1, alt + klik</h1>
     <h2>Naslov 2, alt + klik</h2>
     <h3>Naslov 3, alt + klik</h3>
@@ -47,9 +254,9 @@
     <h5>Naslov 5, alt + klik</h5>
     <h6>Naslov 6, alt + klik</h6>
 
-    <!-- paragraf elementi -->
+    <-- paragraf elementi -->
     <!-- break element <br> -->
-    <!-- hr element <hr> -->
+    <!-- hr element <hr> --
     <p draggable="true">Lorem ipsum dolor sit amet consectetur <br>
         <hr> adipisicing elit. Dolor repellendus voluptatum, rem magnam nam
         eveniet quis quia in eos accusamus consequuntur adipisci quidem voluptas vero illum fuga eius distinctio
@@ -73,7 +280,7 @@
     <p>Moj treci najdrazi film</p>
 
 
-    <!-- oblikovanje teksta -->
+    <-- oblikovanje teksta --
 
     <p>Mi smo <strong>3.E razred</strong>. Idemo u <em>tehnicku skolu</em>. <mark>Razrednik</mark> nam je
         <sub>prof.</sub> Ivan <sup>Benić</sup>. Ima nas <del>24</del> 26 u razredu.
@@ -86,7 +293,7 @@
         dolorem quasi labore ipsa sunt! Doloremque, veniam.
     </pre>
 
-    <!-- liste, ul - unordered liste, ol - oredered liste, dl - difinition liste -->
+    <!-- liste, ul - unordered liste, ol - oredered liste, dl - difinition liste --
 
     <h2>Voćni desert u čaši</h2>
     <h3 id="naslov">Sastojci</h3>
@@ -141,7 +348,7 @@
 
     </ul>
 
-    <!-- small, samp, ins, blockquote, details -->
+    <-- small, samp, ins, blockquote, details --
 
 
 
@@ -220,12 +427,12 @@
     </ol>
 
     <h2>img element</h2>
-    <!-- slika povucena s interneta; copy image adress, paste in src -->
-    <!-- napisati nesto u alt jer ako se slika ne prikaze na stranici. kada mis stavimo na sliku pisati ce ono sto smo napislai u alt -->
+    <-- slika povucena s interneta; copy image adress, paste in src -->
+    <!-- napisati nesto u alt jer ako se slika ne prikaze na stranici. kada mis stavimo na sliku pisati ce ono sto smo napislai u alt --
     <img src="https://cdn.creatureandcoagency.com/uploads/2014/06/Bottlenose-Dolphin-Facts-2.jpg" alt="slika dupina"
         width="350">
 
-    <!-- slika s naseg pc-a -->
+    <-- slika s naseg pc-a --
     <hr>
     <img src="./slike/slika dupina.jpg" alt="slika dupina" width="350">
 
@@ -379,6 +586,6 @@
         <a href="./forms/forme.html" target="_blank">Forme 1</a><br>
         <a href="./zivotopis/zivotopis.html" target="_blank">Zivotopis 1</a><br>
         <a href="./audio_video/audio_video.html" target="_blank">Audio i video elementi</a><br>
-</body>
+</body> -->
 
 </html>
